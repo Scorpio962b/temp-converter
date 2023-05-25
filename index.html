@@ -9,12 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Temperature Converter</h1>
-        <div class="temperature">
-            <input type="number" class="celcius">
-            <input type="number" class="farenheit">
+        <h1>Farenheit to Celcius</h1>
+             <!-- farenheit to celcius -->
+            <h3>farenheit</h3> 
+            <input type="number"oninput="convert(this.value)" onchange="convert(this.value)" id="farenheit" >
+            <h3>Celcius</h3>
+            <p id="answer"></p>
         </div>
-        <button class="Submit">Submit</button>
+    </div>
+    <div class="container">
+        <!-- Celcius to Farenheit -->
+        <h1>Celcius to Farenheit</h1>
+            <h3>Celcius</h3> 
+            <input type="number"oninput="convert2(this.value)" onchange="convert2(this.value)" id="celcius" >
+            <h3>Farenheit</h3>
+            <p id="answer2"></p>
+        </div>
     </div>
 
     <script src="./script/temp.js"></script>
